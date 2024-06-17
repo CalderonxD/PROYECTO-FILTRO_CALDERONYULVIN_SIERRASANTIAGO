@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-width: 300px;
+    font-family: "Aldrich", monospace;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main{
+    margin-top: 100px;
+    background-image: url(../images/fondo.png);
+    height: 70vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Aldrich", monospace;
+}
+
+
+/* HEADER------------------------------------------------------ */
+
+header{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: header 1s;
+    position: fixed;
+    z-index: 400;
+    width: 100vw;
+}
+
+@keyframes logo {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.logo{
+    height: 90px;
+    animation: logo 2s 1s infinite linear;
+}
+
+.caja_perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.logo{
+    height: 90px;
+    animation: logo 2s 1s infinite linear;
+}
+
+@keyframes header {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* --------------------------------------------------------- */
+
+/* main --------------------------------------- */
+
+.rp{
+    height: 350px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.093);
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+}
+
+.contenedor-objeto{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    height: 80%;
+    width: 80%;
+    gap: 15px;
+}
+
+.contenedor_decision{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20%;
+    width: 80%;
+    
+}
+
+.texto_rp{
+    display: flex;
+    color: white;
+    font-size: 2em;
+}
+
+.texto_rp_2{
+    display: flex;
+    color: white;
+    font-size: 1em;
+}
+
+#rp1{
+    height: 120px;
+    width: 120px;
+}
+#rp2{
+    height: 120px;
+    width: 160px;
+}
+#rp3{
+    height: 120px;
+    width: 150px;
+}
+#rp4{
+    height: 120px;
+    width: 130px;
+}
+#rp5{
+    height: 80px;
+    width: 80px;
+}
+#rp6{
+    height: 120px;
+    width: 150px;
+}
+
+
+
+p{
+    color: yellow;
+    font-size: 2em;
+
+}
+
+.agregar_carrito{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    p{
+        color:white !important;
+    }
+}
+
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.cancelar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    height: 50px;
+    width: 100px;
+    background-color: red;
+
+    p{
+        color:white !important;
+    }
+}
+
+
+
+/* FOOTER ------------------------------- */
+.facebook,.discord,.instagram{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    height: 80%;
+    width: 50%;
+}
+
+
+
+.logo_footer{
+    height: 100px;
+    width: 90px;
+    /* width: 30%; */
+}
+.nombre_pag{
+    text-align: center;
+    font-size:0.8em;
+}
+
+.iconos_footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* VISTA PC ----------------------------- */
+
+.video_fondo{
+    display: none;
+}
+
+.mensaje_pc{
+    display: none;
+}
+
+.contenedor{
+    display: none;
+}
+
+
+
+/* -------------------------------------------- */
+
+/* MEDIA QUERYS ----------------------------------- */
+
+@media (min-width: 800px) {
+    
+    main{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+    
+    footer{
+        display: none;
+    }
+
+    .video_fondo{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Aldrich", monospace;
+        font-size: 35px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .mensaje_pc{
+        display: inline;
+        color: black;
+        position: absolute;
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.385);
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:300px) {
+    main{
+        width: 200vw;
+    }
+    
+    header{
+        width: 200vw;
+        
+    }
+    
+    footer{
+        
+        width: 200vw;
+    }
+}
+

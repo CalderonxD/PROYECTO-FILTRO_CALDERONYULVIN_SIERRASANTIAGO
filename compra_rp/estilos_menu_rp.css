@@ -1,0 +1,357 @@
+/* GENERAL ----------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* min-width: 300px; */
+    font-family: "Aldrich", monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 100px;
+    background-image: url(../images/fondo.png);
+    height: 75vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Aldrich", monospace;
+}
+
+/* ---------------------------------------- */
+
+/* VISTA PC ----------------------------- */
+
+.video_fondo{
+    display: none;
+}
+
+.mensaje_pc{
+    display: none;
+}
+
+.contenedor{
+    display: none;
+}
+
+
+
+/* -------------------------------------------- */
+
+
+
+/* HEADER------------------------------------------------------ */
+
+header{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: header 1s;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+}
+
+@keyframes logo {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.logo{
+    height: 90px;
+    animation: logo 2s 1s infinite linear;
+}
+
+.caja_perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.logo{
+    height: 90px;
+    animation: logo 2s 1s infinite linear;
+}
+
+@keyframes header {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
+/* MAIN ------------------------------------------------- */
+
+
+/* GRID ------------------------------------ */
+@keyframes grid1_3_5 {
+    0%{
+        display: none;
+        transform: translateX(120%);
+    }
+    100%{
+        transform: translateX(0);
+        display: flex;
+    }
+}
+
+@keyframes grid2_4_6 {
+    0%{
+        transform: translateX(-120%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.contenedor_rps{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%  ;
+    margin-inline: 2%;
+    margin-top: 10%;
+    gap: 10px;
+    width: 90%;
+    height: 90vw;
+    justify-content: center;
+    grid-auto-flow: row;
+}
+
+.caja1,.caja3,.caja5{
+    background-color: rgba(255, 255, 255, 0.093);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 20px; */
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    animation: grid1_3_5 2s ;
+    justify-content: center;
+    /* overflow: auto; */
+}
+
+.caja2,.caja6{
+    background-color: rgba(255, 255, 255, 0.093);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 20px; */
+    text-decoration: none;
+    position: relative;
+    animation: grid2_4_6 2s ;
+    justify-content: center;
+}
+
+.caja4{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.093);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    animation: grid2_4_6 2s 1s;
+    justify-content: center;
+}
+
+#rp1{
+    height: 80px;
+}
+
+.texto_rp{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+p{
+    color: yellow;
+    font-size: 2em;
+}
+
+.cofresito{
+    position:absolute;
+    height: 60px;
+    left: 15px;
+    top: 10px;
+}
+
+.num_cofres{
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    color: black;
+    font-weight:bolder;
+}
+/* ------------------------------------------------------------------- */
+
+/* CHAT WSP */
+
+.chat{
+    display: flex;
+    background-color: white;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+}
+
+.wsp{
+    height: 50px;
+    
+}
+
+/* ------------------------------------------------------------------- */
+
+/* FOOTER ------------------------------- */
+.facebook,.discord,.instagram{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    height: 80%;
+    width: 50%;
+}
+
+
+
+.logo_footer{
+    height: 100px;
+    width: 90px;
+    /* width: 30%; */
+}
+.nombre_pag{
+    text-align: center;
+    font-size:0.8em;
+}
+
+.iconos_footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MEDIA QUERYS ----------------------------------- */
+
+@media (min-width: 800px) {
+    
+    main{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+    
+    footer{
+        display: none;
+    }
+
+    .video_fondo{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Aldrich", monospace;
+        font-size: 35px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .mensaje_pc{
+        display: inline;
+        color: black;
+        position: absolute;
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.385);
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contenedor_rps{
+        top: 100px;
+        position: absolute;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(6,300px)  ;
+        /* height: 1100px; */
+    }
+
+    .caja4,.caja5,.caja6{
+        padding-top: 10px;
+    }
+
+    main{
+        height: 2000px;
+        min-width: 256px;
+        justify-content: space-between;
+    }
+
+    .chat{
+        /* position: absolute; */
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+    
+}
+
+@media (min-width:500px) {
+    main{
+        height: 220vh;
+    }
+}
+
+@media (min-width:425px) {
+    main{
+        height: 178vh;
+    }
+}

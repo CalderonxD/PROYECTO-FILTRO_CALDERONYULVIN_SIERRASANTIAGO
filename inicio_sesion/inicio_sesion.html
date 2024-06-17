@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distrito Elite</title>
+    <link rel="stylesheet" href="estilos_inicio_sesion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="contenedor">
+      <iframe class="video_fondo" width="560" height="315" src="https://www.youtube.com/embed/mDYqT0_9VR4?autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="mensaje_pc"><b>Lo sentimos pero la pagina no esta disponible en esta resolución</b></div>
+    </div>
+      <main>
+      <form action="../menu_principal/menu_principal.html" method="get">
+        <div class="inicio_sesion">
+          <section class="contenido">
+            <img class="logo" src="../images/logo pag.png" alt="logo pagina" />
+            <h1 class="titulo"><strong>Ingresar</strong></h1>
+            <input class="nombre_usuario" type="text" name="nombre" placeholder="NOMBRE DE USUARIO" required/>
+            <input class="contraseña" type="password" name="contraseña" placeholder="CONTRASEÑA" required/>
+            <section class="iconos_inicio_sesion">
+            <a href="#">
+            <div class="facebook">
+              <img id="facebook" src="../images/facebook.jpg" alt="Logo de Facebook"/>
+            </div>
+            </a>
+          
+            <a href="#">
+              <div class="google">
+                <img id="google" src="../images/google.png" alt="Logo Google" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="apple">
+              <img id="apple" src="../images/apple.png" alt="logo de Apple" />
+            </div>
+            </a>
+          <a href="#">
+            <div class="xbox">
+              <img id="xbox" src="../images/xbox.png" alt="logo de xbox" />
+            </div>
+          </a>
+          <a href="#">
+            <div class="psn">
+              <img
+              id="psn"
+              src="../images/psn.jpg"
+              alt="logo de Playstation Network"
+              />
+            </div>
+          </a>
+        </section>
+        <article class="mantener_sesion">
+          <input type="checkbox" name="mantener_sesion" id="mantener_sesion" />
+          <label for="mantener_sesion">Permanecer conectado</label>
+        </article>
+        <button class="boton" type="submit">
+          <div class="boton_continuar">
+            <i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </button>
+        
+        <b class="problema_inicio_sesion">¿No puedes iniciar sesion?</b>
+        
+        <a class="crear_cuenta" href="#">Crear cuenta</a>
+      </section>
+    </div>
+  </form>
+</main>
+
+</body>
+<script src="https://kit.fontawesome.com/c13ba71f5f.js" crossorigin="anonymous"></script>
+</html>

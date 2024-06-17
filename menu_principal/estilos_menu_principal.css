@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.video_fondo{
+    display: none;
+}
+
+.mensaje_pc{
+    display: none;
+}
+
+.contenedor{
+    display: none;
+}
+
+@keyframes header {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes servicios1y3 {
+    0%{
+        transform: translateX(100%);
+        display: none;
+    }
+    100%{
+        transform: translateX(0);
+        display: flex;
+    }
+}
+
+@keyframes servicio2 {
+    0%{
+        transform: translateX(-100%);
+        display: none;
+    }
+    100%{
+        transform: translateX(0);
+        display: flex;
+    }
+}
+
+
+@keyframes logo {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+body{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 100px;
+    background-image: url(../images/fondo.png);
+    height: 120vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: header 1s;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    min-width: 300px;
+}
+
+footer{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Aldrich", monospace;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    height: 80%;
+    width: 50%;
+}
+
+.logo{
+    height: 90px;
+    animation: logo 2s 1s infinite linear;
+}
+
+.logo_footer{
+    height: 100px;
+    width: 90px;
+    /* width: 30%; */
+}
+.nombre_pag{
+    text-align: center;
+    font-size:0.8em;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    color: black; /* Esto hereda el color del enlace de su elemento padre */
+}
+
+.iconos_footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja_perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+.caja_carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.contenedor_servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: 100%;
+}
+
+.caja_servicio1,.caja_servicio3{
+    height: 130px;
+    width: 90%;
+    background-color: white;
+    margin-block: 10px;
+    align-items: center;
+    font-size: 2em;
+    display: flex;
+    text-align: center;
+    border-radius: 30px;
+    animation: servicios1y3 2s ;
+    justify-content: center;
+    p{
+        margin: 0px;
+        font-family: "Aldrich", monospace;
+        
+    }
+    
+}
+
+strong{
+    color: black;
+}
+
+.caja_servicio2{
+    height: 130px;
+    width: 90%;
+    background-color: white;
+    margin-block: 10px;
+    border-radius: 30px;
+    animation: servicio2 2s ;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    p{
+        margin: 0px;
+        font-family: "Aldrich", monospace;
+    }
+}
+
+.facebook,.discord,.instagram{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.rp1{
+    height: 100px;
+}
+
+.skins{
+    height: 110px;
+}
+
+.coach{
+    height: 120px;
+}
+
+header a,
+footer a,
+.main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@media (min-width: 800px) {
+    
+    main{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+    
+    footer{
+        display: none;
+
+    }
+
+    .video_fondo{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Aldrich", monospace;
+        font-size: 35px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .mensaje_pc{
+        display: inline;
+        color: black;
+        position: absolute;
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.385);
+        border-radius: 20px;
+    }
+}
+
+@media (min-width:370px) {
+    main{
+        height: 105vh;
+    }
+}
+
+@media (max-width:700) {
+    main{
+        height: 250vh;
+    }
+}

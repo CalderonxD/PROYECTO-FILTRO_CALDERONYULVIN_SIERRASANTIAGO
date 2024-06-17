@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.video_fondo{
+    display: none;
+}
+
+.mensaje_pc{
+    display: none;
+}
+
+.contenedor{
+    display: none;
+}
+
+.inicio_sesion{
+    min-width: 300px;
+    height: 90vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.titulo{
+    text-align: center;
+    font-family: "Aldrich", monospace;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+
+.contenido{
+    margin-top: 30px;
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombre_usuario, .contraseña{
+    font-family: monospace;
+    font-size: 11px;
+    width: 90%;
+    background-color: rgb(236, 236, 236);
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.iconos_inicio_sesion{
+    margin-top: 20px;
+    display: flex;
+    width: 95%;
+    height: 50px;
+    /* flex-wrap: wrap; */
+    /* background-color: gray; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#facebook,#google,#apple,#xbox,#psn{
+    height: 30px;
+}
+
+.facebook{
+    display: flex;
+    background-color: rgb(49, 96, 251);
+    width: 50px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.google{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.apple{
+    display: flex;
+    background-color: black;
+    width: 50px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.xbox{
+    display: flex;
+    background-color: green;
+    width: 50px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.psn{
+    display: flex;
+    background-color: #08046c;
+    width: 50px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.mantener_sesion{
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Aldrich", monospace;
+}
+
+.mantener_sesion label{
+    color:gray;
+    padding-left: 10px;
+}
+
+.boton_continuar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    margin-top: 70px;
+}
+
+.problema_inicio_sesion{
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.crear_cuenta{
+    color: gray;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.boton{
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    
+}
+
+@media (min-width: 800px) {
+    
+    main{
+        display: none;
+    }
+
+    .video_fondo{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Aldrich", monospace;
+        font-size: 35px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .mensaje_pc{
+        display: inline;
+        color: black;
+        position: absolute;
+        width: 500px;
+        background-color: rgba(255, 255, 255, 0.385);
+        border-radius: 20px;
+    }
+}
+
+@media (min-width:400px) {
+
+    .inicio_sesion{
+        height: 100vh;
+    }
+}
